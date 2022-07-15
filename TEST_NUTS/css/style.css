@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(82, 124, 205);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1190px;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hiro_title {
+    padding-top: 120px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.hiro_title_text {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    margin-right: auto;
+}
+
+.hiro_swiper_scroll {
+    width: 360px;
+}
+/* Контейнер прогресса (серый фон) */
+.progress-container {
+    width: 100%;
+    height:2px;
+    background: #C8D9FB;
+  }
+  
+  /* Индикатор прогресса (индикатор прокрутки) */
+  .progress-bar {
+    height: 2px;
+    background: #527CCD;
+    width: 0%;
+  }
+
+.hiro_swiper_arrows {
+ display: flex;  
+}
+
+.next,
+.prev {
+    padding: 20px 25px;
+    border: 1px solid #C8D9FB;
+    margin-left: 40px;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.next:hover,
+.prev:hover {
+    background-color: #C8D9FB;
+}
+
+.next:active,
+.prev:active {
+    background-color: #9eacca;
+}
+
+.next.disabled,
+.prev.disabled {
+  opacity: .25;
+  pointer-events: none;
+}
+
+.slider {
+    position: relative;
+    user-select: none;
+    touch-action: pan-y;
+    width: 1160px;
+    height: 500px;
+    margin-bottom: 150px;
+}
+
+.slider-list {
+    overflow: hidden;
+    width: 1160px;
+    height: 500px;
+}
+
+.slider-list.grab {
+    cursor: grab;
+}
+
+.slider-list.grabbing {
+    cursor: grabbing;
+}
+
+.slider-track {
+    display: flex;
+    width: 100%;
+}
+
+.hiro_swiper_card {
+    padding: 20px;
+    width: 260px;
+    border: 1px solid #C8D9FB;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.hiro_swiper_card:last-child {
+    margin-right: 0;
+}
+
+.hiro_swiper_card:hover {
+    border: 1px solid #527CCD; 
+}
+
+.swiper_card_img {
+    padding-bottom: 10px;
+}
+
+.swiper_card_img img {
+    pointer-events: none;
+}
+
+.swiper_card_data {
+    padding-bottom: 10px;
+    font-size: 12px;
+    line-height: 22px;
+    color: rgba(82, 124, 205, 0.6);
+}
+
+.swiper_card_title {
+    padding-bottom: 10px;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.swiper_card_text {
+    font-size: 12px;
+    line-height: 22px;
+    height: 90px;
+    margin-top: auto;
+}
+
